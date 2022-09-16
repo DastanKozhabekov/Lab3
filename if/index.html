@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+    <script>
+        function e1(x){
+            if(x<=0)
+                return -x
+            else if (x>0 && x<2)
+                return Math.pow(x, 2)
+            else
+                return 4.0
+            
+        }
+
+        function e2(x){
+            if(x<0)
+                return 0
+            else if (x%2==0)
+                return 1
+            else 
+                return -1
+            
+        }
+
+        function e3(year){
+            if(year<0) 
+                console.error('Error')
+            else if(year%400 == 0 || year%4 == 0 && year%100 != 0 )
+                return 'Високосный'
+            else 
+                return 'не високосный'
+            
+        }
+
+        function e4(num){
+            if(num>0 && num%2==0) 
+                return 'Положительное четное число'
+            else if(num>0 && num%2==1) 
+                return 'Положительное нечетное число'
+            else if(num<0 && -num%2==0)
+                return 'Отрицательное четное число'
+            else if(num<0 && -num%2==1)
+                return 'Отрицательное нечетное число'
+            else 
+                return 'zero'
+        }
+
+        function e5(num){
+            if(num>0 && num%2==0  && num<10) 
+                return 'Положительное четное одноначное число'
+            else if(num>0 && num%2==1 && num<10) 
+                return 'Положительное нечетное одноначное число'
+            else if(num>0 && num%2==0 && num<100 && num>9) 
+                return 'Положительное четное двузначное число'
+            else if(num>0 && num%2==1 && num>9 && num<100) 
+                return 'Положительное нечетное двузначное число'
+            else if(num>0 && num%2==0 && num>99 && num<1000)
+                return 'Положительное четное трехначное число'
+            else if(num>0 && num%2==1 && num>99 && num<1000)
+                return 'Положительное нечетное трехначное число'
+            else 
+                console.error('error');
+        }
+    </script>
+</body>
+</html>
