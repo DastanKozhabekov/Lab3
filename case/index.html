@@ -8,93 +8,484 @@
 </head>
 <body>
     <script>
-        function e1(num){
-            switch(Math.floor(num/10)){
+        function e1(n){
+            let age = ""
+            switch(Math.floor(n/10)){
                 case 2:
-                    console.log ('двадцать')
+                    age += 'двадцать '
                     break
                 case 3:
-                    console.log ('тридцать')
+                    age +=  'тридцать '
                     break
                 case 4:
-                    console.log ('сорок')
+                    age +=  'сорок '
                     break
                 case 5:
-                    console.log ('пятьдесят')
+                    age +=  'пятьдесят '
                     break
                 case 6:
-                    console.log ('шестьдесят')
+                    age +=  'шестьдесят '
                     break
                 default:
-                    console.error('error');
-                    break
+                    console.log('') 
             }
-            switch(num%10){
+            switch(n%10){
                 case 1:
-                    console.log ('один')
+                    age +=  'один '
                     break
                 case 2:
-                    console.log ('два')
+                    age +=  'два '
                     break
                 case 3:
-                    console.log ('три')
+                    age +=  'три '
                     break
                 case 4:
-                    console.log ('четыре')
+                    age +=  'четыре '
                     break
                 case 5:
-                    console.log ('пять')
+                    age +=  'пять '
                     break
                 case 6:
-                    console.log ('шесть')
+                    age +=  'шесть '
                     break
                 case 7:
-                    console.log ('семь')
+                    age +=  'семь '
                     break
                 case 8:
-                    console.log ('восемь')
+                    age +=  'восемь '
                     break
                 case 9:
-                    console.log ('девять')
+                    age +=  'девять '
                     break
                 default:
-                    console.error('error');
-                    break
+                    console.log('')     
             }
-            switch(num%10){
+            switch(n%10){
                 case 1:
-                    console.log ('год')
+                    age +=  'год '
                     break
                 case 2:
-                    console.log ('года')
+                    age +=  'года '
                     break
                 case 3:
-                    console.log ('года')
+                    age +=  'года '
                     break
                 case 4:
-                    console.log ('года')
+                    age +=  'года '
                     break
                 case 5:
-                    console.log ('лет')
+                    age +=  'лет '
                     break
                 case 6:
-                    console.log ('лет')
+                    age +=  'лет '
                     break
                 case 7:
-                    console.log ('лет')
+                    age +=  'лет '
                     break
                 case 8:
-                    console.log ('лет')
+                    age +=  'лет '
                     break
                 case 9:
-                    console.log ('лет')
+                    age +=  'лет '
                     break
                 default:
-                    console.error('error');
+                    console.log('') 
+            }
+            console.log(age)
+        }
+
+        function e2(n){
+            let js = ""
+            switch (n) {
+                case 10:
+                    js += "десять учебных заданий."
                     break
+                case 11:
+                    js +="одинадцать учебных заданий."
+                    break
+                case 12:
+                    js +="двенадцать учебных заданий."
+                    break
+                case 13:
+                    js +="тринадцать учебных заданий."
+                    break
+                case 14:
+                    js +="четырнадцать учебных заданий."
+                    break
+                case 15:
+                    js +="пятнадцать учебных заданий."
+                    break
+                case 16:
+                    js +="шестнадцать учебных заданий."
+                    break
+                case 17:
+                    js +="семнадцать учебных заданий."
+                    break
+                case 18:
+                    js +="восемнадцать учебных заданий."
+                    break
+                case 19:
+                    js +="девятнадцать учебных заданий."
+                    break
+                default:
+                    console.log('') 
+            }
+            switch (Math.floor(n / 10)) {
+                case 2:
+                    js +="двадцать "
+                    break
+                case 3:
+                    js +="тридцать "
+                    break
+                case 4:
+                    js +="сорок "
+                    break
+                default:
+                    console.log('') 
+            }
+        
+            switch (n % 10) {
+                case 1:
+                    js +="одно "
+                    break
+                case 2:
+                    js +="два "
+                    break
+                case 3:
+                    js +="три "
+                    break
+                case 4:
+                    js +="четыре "
+                    break
+                case 5:
+                    js +="пять "
+                    break
+                case 6:
+                    js +="шесть "
+                    break
+                case 7:
+                    js +="семь "
+                    break
+                case 8:
+                    js +="восемь "
+                    break
+                case 9:
+                    js +="девять "
+                    break
+                default:
+                    console.log('') 
+                }
+        
+            switch (n % 10) {
+                case 0:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                    js +="учебных заданий."
+                    break
+                case 1:
+                    js +="учебное задание."
+                    break
+                case 2:
+                case 3:
+                case 4:
+                    js +="учебных задания."
+                    break
+                default:
+                    console.log('')    
+                }
+            console.log(js)
+        }
+
+        function e3(n){
+            let num = ''
+            switch (Math.floor(n / 100)) {
+        case 1:
+            num += "сто "
+            break
+        case 2:
+            num += "двести "
+            break
+        case 3:
+            num += "триста "
+            break
+        case 4:
+            num += "четыреста "
+            break
+        case 5:
+            num += "пятьсот "
+            break
+        case 6:
+            num += "шестьсот "
+            break
+        case 7:
+            num += "семьсот "
+            break
+        case 8:
+            num += "восемьсот  "
+            break
+        case 9:
+            num += "девятьсот  "
+            break
+        }
+    
+        if (Math.floor((n % 100) / 10) == 1)
+            switch (n % 100) {
+            case 10:
+                num += "десять"
+                break
+            case 11:
+                num += "одинадцать"
+                break
+            case 12:
+                num += "двенадцать"
+                break
+            case 13:
+                num += "тринадцать"
+                break
+            case 14:
+                num += "четырнадцать"
+                break
+            case 15:
+                num += "пятнадцать"
+                break
+            case 16:
+                num += "шестнадцать"
+                break
+            case 17:
+                num += "семнадцать"
+                break
+            case 18:
+                num += "восемнадцать"
+                break
+            case 19:
+                num += "девятнадцать"
+                break
+        } else {
+            switch (Math.floor((n % 100) / 10)) {
+            case 2:
+                num += "двадцать "
+                break
+            case 3:
+                num += "тридцать "
+                break
+            case 4:
+                num += "сорок "
+                break
+            case 5:
+                num += "пятьдесят "
+                break
+            case 6:
+                num += "шестьдесят "
+                break
+            case 7:
+                num += "семьдесят "
+                break
+            case 8:
+                num += "восемьдесят "
+                break
+            case 9:
+                num += "девяносто "
+                break
+            }
+    
+            switch (n % 10) {
+            case 1:
+                num += "один"
+                break
+            case 2:
+                num += "два"
+                break
+            case 3:
+                num += "три"
+                break
+            case 4:
+                num += "четыре"
+                break
+            case 5:
+                num += "пять"
+                break
+            case 6:
+                num += "шесть"
+                break
+            case 7:
+                num += "семь"
+                break
+            case 8:
+                num += "восемь"
+                break
+            case 9:
+                num +="девять"
+                break
+            }
+        }
+        console.log(num);
+    }
+
+    function e4(n){
+        let ages = 'год '
+        switch (n % 10) {
+            case 0:
+            case 1:
+                ages += "бел";
+                break;
+            case 2:
+            case 3:
+                ages += "черн";
+                break;
+            case 4:
+            case 5:
+                ages += "зелён";
+                break;
+            case 6:
+            case 7:
+                ages += "красн";
+                break;
+            case 8:
+            case 9:
+                ages += "жёлт";
+                break;
+            }
+        
+        switch ((n + 1) % 5) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 9:
+            case 10:
+            case 11:
+                ages += "ой ";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                ages += "ого ";
+                break;
+            }
+        
+            switch ((n + 8) % 12) {
+            case 0:
+                ages += "крысы";
+                break;
+            case 1:
+                ages += "коровы";
+                break;
+            case 2:
+                ages += "тигра";
+                break;
+            case 3:
+                ages += "зайца";
+                break;
+            case 4:
+                ages += "дракона";
+                break;
+            case 5:
+                ages += "змеи";
+                break;
+            case 6:
+                ages += "лошади";
+                break;
+            case 7:
+                ages += "овцы";
+                break;
+            case 8:
+                ages += "обезьяны";
+                break;
+            case 9:
+                ages += "курицы";
+                break;
+            case 10:
+                ages += "собаки";
+                break;
+            case 11:
+                ages += "свиньи";
+                break;
+        }
+        console.log(ages);
+    }
+
+    function e5(day, month){
+        switch (m) {
+            case 1:
+                if (d > 19)
+                    return"Водолей";
+                else 
+                    return"Козерог";
+                break;
+            case 2:
+                if (d > 18) 
+                    return"Рыбы";
+                else 
+                    return"Водолей";
+                break;
+            case 3:
+                if (d > 20) 
+                    return"Овен";
+                else  
+                    return"Рыбы";
+                break;
+            case 4:
+                if (d > 19) 
+                    return"Телец";
+                else  
+                    return"Овен";
+                break;
+            case 5:
+                if (d > 20) 
+                    return"Близнецы";
+                else  
+                    return"Телец";
+                break;
+            case 6:
+                if (d > 21)
+                    return"Рак";
+                else 
+                    return"Близнецы";
+                break;
+            case 7:
+                if (d > 22) 
+                    return"Лев";
+                else 
+                    return"Рак";
+                break;
+            case 8:
+                if (d > 22) 
+                    return"Дева";
+                else 
+                    return"Лев";
+                break;
+            case 9:
+                if (d > 22) 
+                    return"Весы";
+                else 
+                    return"Дева";
+                break;
+            case 10:
+                if (d > 22) 
+                    return"Скорпион";
+                else 
+                    return"Весы";
+                break;
+            case 11:
+                if (d > 22)
+                    return"Стрелец";
+                else 
+                    return"Скорпион";
+                break;
+            case 12:
+                if (d > 21)
+                    return"Козерог";
+                else 
+                    return"Стрелец";
+                    break;
         }
     }
-    function e2(){}
+    
     </script>
 </body>
 </html>
