@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function e1(num, k){
+            sum = 0
+            for(let i=0; i<=num; i++){
+               sum += Math.pow(i, k) 
+            }
+            console.log(parseFloat(sum));
+        }
+
+        function e2(num){
+            sum = 0
+            if(num<0) console.error('error')
+            for(let i=0; i<=num; i++){
+               sum += Math.pow(i, i) 
+            }
+            console.log(parseFloat(sum));
+        }
+        
+        function e3(num) {
+            sum = 0
+            hp = 0
+            if(num<0) console.error('error')
+            for(let i=1; i<=num; i++){
+               hp = i
+               for(let i2=1; i2<=num-i; i2++){
+                sum += hp*i
+               }
+            }
+            console.log(parseFloat(sum));
+        }
+        function e4(a, b){
+            if(a>b) console.error('error');
+            for (let i=a; i<=b; i++){
+                for(let i2=1; i2<=i; i2++){
+                    console.log(i);
+                }
+            }
+        }
+        function e5(a, b) {
+            if(a>b) console.error('error');
+            for (let i=1; i<=b-a+1; i++){
+                for(let i2=1; i2<=i; i2++){
+                    console.log(a+i-1);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
