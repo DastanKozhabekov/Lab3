@@ -11,13 +11,30 @@
         function e1(num){
             sum_pre = 1
             sum_post = 1
+            sum = 0
             let i = 0
             while(num>1 && i<num){
-                
+                sum = sum_pre+sum_post
+                sum_pre = sum_post
+                sum_post = sum
+                i++
             }
-            console.log('Pre: '+sum_pre+' Post: '+sum_post+sum_pre);
+            console.log('Pre: ', sum-sum_pre + ' Post: ', sum_post);
         }
-        console.log(e1(13));
+        function e2(num){
+            sum_pre = 1
+            sum_post = 1
+            sum = 0
+            let i = 0
+            while(num>1 && i<num-1){
+                sum = sum_pre+sum_post
+                sum_pre = sum_post
+                sum_post = sum
+                i++
+            }
+            console.log('Num', num + ':', sum);
+        }
+        console.log(e2(6));
     </script>
 </body>
 </html>
