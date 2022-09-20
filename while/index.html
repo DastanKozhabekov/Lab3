@@ -13,7 +13,7 @@
             sum_post = 1
             sum = 0
             let i = 0
-            while(num>1 && i<num){
+            while(num>1 && i<num-1){
                 sum = sum_pre+sum_post
                 sum_pre = sum_post
                 sum_post = sum
@@ -34,7 +34,43 @@
             }
             console.log('Num', num + ':', sum);
         }
-        console.log(e2(6));
+        function e3(e){
+            let ek1 = 0 
+            let ek2 = 2
+            let i=1
+            while(Math.abs(ek1-ek2)>=parseFloat(e)){
+                i++
+                ek1 = ek2
+                ek2 = 2+1/ek1
+            }
+            console.log('K=', i, 'A(k-1)', ek1, 'A(k)', ek2);
+        }
+        function e4(e){
+            let ek1 = 1 
+            let ek2
+            let ek3 = 0
+            let i=2
+            while(parseFloat(Math.abs(ek3-ek1))>=parseFloat(e)){
+                ek2 = ek1 
+                ek1 = ek3
+                ek3 = (ek2+2*ek1)/3
+                i++
+            }
+            console.log('K=', i, 'A(k-1)', ek1, 'A(k)', ek2);
+        }
+        function e5(a, b, c){
+            let i = 0
+            let attemp
+            while((a-c)>=0){
+                a = -c
+                attemp = b
+                while(attemp-c>=0){
+                    attemp = -c
+                    i++
+                }
+            }
+            console.log('K:', i)
+        }
     </script>
 </body>
 </html>
