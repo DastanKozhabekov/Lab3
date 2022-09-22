@@ -39,8 +39,8 @@
             console.log(parseFloat(sum));
         }
         function e39(a, b){
-            if(a>b) console.error('error');
-            for (let i=a; i<=b; i++){
+            if (a<b) console.error('error');
+            for(let i=a; i<=b; i++){
                 for(let i2=1; i2<=i; i2++){
                     console.log(i);
                 }
@@ -54,7 +54,7 @@
                 }
             }
         }
-        console.log(e38(4));
+        console.log(e39(5, 9));
     </script>
 </body>
 </html>
