@@ -32,8 +32,9 @@
             for(let i=1; i<=num; i++){
                hp = i
                for(let i2=1; i2<=num-i; i2++){
-                sum += hp*i
+                hp *= i
                }
+               sum += hp
             }
             console.log(parseFloat(sum));
         }
@@ -53,6 +54,7 @@
                 }
             }
         }
+        console.log(e38(4));
     </script>
 </body>
 </html>
